@@ -8,20 +8,8 @@
 
 import gtk
 
-# TODO: kern out unneccesary imports
 from zim.plugins import PluginClass, WindowExtension, extends
-from zim.command import Command
 from zim.actions import action
-from zim.config import data_file, ConfigManager
-from zim.notebook import Notebook, PageNameError, NotebookInfo, \
-	resolve_notebook, build_notebook
-from zim.ipc import start_server_if_not_running, ServerProxy
-from zim.gui.widgets import Dialog, ScrolledTextView, IconButton, \
-	InputForm, gtk_window_set_default_icon, QuestionDialog
-from zim.gui.clipboard import Clipboard, SelectionClipboard
-from zim.gui.notebookdialog import NotebookComboBox
-from zim.templates import get_template
-
 
 class NoQuittingPlugin(PluginClass):
 
